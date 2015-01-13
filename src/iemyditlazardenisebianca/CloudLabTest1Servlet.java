@@ -4,7 +4,8 @@ import javax.servlet.http.*;
 
 @SuppressWarnings("serial")
 public class CloudLabTest1Servlet extends HttpServlet {
-	public void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException {
+	public void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException 
+	{
 		resp.setContentType("text/plain");
 		
 		String A, B, C, D;
@@ -21,8 +22,6 @@ public class CloudLabTest1Servlet extends HttpServlet {
 			resp.getWriter().println("ERROR: Some values haven't been specified.");
 		}
 		else{
-			
-			//convert all string values to floats
 			
 			try{
 				a = Float.parseFloat(A.trim());
